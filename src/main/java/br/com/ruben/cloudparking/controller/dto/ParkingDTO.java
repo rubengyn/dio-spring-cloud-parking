@@ -1,7 +1,10 @@
 package br.com.ruben.cloudparking.controller.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.time.LocalDate;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ParkingDTO {
 
     private String id;
