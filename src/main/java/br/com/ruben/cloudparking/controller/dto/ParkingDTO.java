@@ -1,10 +1,9 @@
 package br.com.ruben.cloudparking.controller.dto;
 
+import java.time.LocalDateTime;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonInclude;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ParkingDTO {
@@ -20,11 +19,12 @@ public class ParkingDTO {
     private LocalDateTime exitDate;
     private Double bill;
 
-    public void setId(String id) {
-    }
-
     public String getId() {
         return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getLicense() {
